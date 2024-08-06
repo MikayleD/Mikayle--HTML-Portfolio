@@ -193,3 +193,11 @@ ul li a:hover {
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;
 }
+
+.card {
+  padding: 1rem 1rem ;
+  height: 500px;
+  width: 500px;
+  justify-content: center;
+  margin: auto;
+}
