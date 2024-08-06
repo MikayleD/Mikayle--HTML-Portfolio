@@ -24,9 +24,9 @@ a {
 
 body {
   font-family: "Inter";
-  background-image: url("logos/Background\ for\ web.jpg");
+  /* background-image: url("logos/Background\ for\ web.jpg");
   background-size: cover;
-  background-attachment: fixed; 
+  background-attachment: fixed; */
 }
 
 nav {
