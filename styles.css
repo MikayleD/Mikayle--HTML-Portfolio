@@ -36,7 +36,7 @@ nav {
   left: 0;
   max-height: 78px;
   /* z-index: 99; */
-  background-color: #008055;
+  background-color: #00805500;
 }
 
 .nav__content {
@@ -53,9 +53,6 @@ nav {
   width: 100px;
   height: 100%;
 }
-/* nav .logo a:hover {
-  color: var(--primary-color-dark);
-}  */
 
 nav .checkbox {
   display: none;
@@ -202,10 +199,17 @@ ul li a:hover {
   width: 500px;
   justify-content: center;
   margin: auto;
-  background-color: #00805500;
+  background-color: #0080551f;
   color: #ffffff;
   /* backdrop-filter: blur(14px);  */
-  border: 0px;
+  border: 3px;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.card:hover{
+  transform: scale(1.1);
+  background: #008055;
+  z-index: 1;
 }
 .card-body{
   height: auto;
@@ -220,4 +224,7 @@ ul li a:hover {
 }
 .text-center{
   padding: 1rem 1rem ;
+}
+.card-img-top{
+  border-radius: 15px;
 }
