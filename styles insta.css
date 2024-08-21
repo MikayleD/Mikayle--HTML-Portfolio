@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
   --primary-color: #a855f7;
@@ -29,7 +28,6 @@ body {
   /* background-image: url("logos/Background\ for\ web.jpg");
   background-size: cover;
   background-attachment: fixed; */
-  background-color: #ffffff;
 }
 
 nav {
@@ -158,7 +156,7 @@ ul li a:hover {
   color: #ffffff;
 }
 
-@media (width < 750px) {
+@media screen and (max-width: 1200px) {
   nav .checkbox {
     display: block;
   }
@@ -169,7 +167,7 @@ ul li a:hover {
     height: calc(100vh - 85px);
     left: -100%;
     top: 85px;
-    background-color: var(--text-dark);
+    background-color: #008055;
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
@@ -193,17 +191,8 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
+ 
 
-  .text-center{
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 10rem 1rem 5rem 1rem;
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
 }  
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
@@ -233,36 +222,22 @@ ul li a:hover {
   font-size: 20px ;
 }
 .text-center{
-  padding: 8rem 8rem ;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-}
-.row{
-  margin-left: auto;
-  margin-right: auto;
   padding: 1rem 1rem ;
 }
+
 .playfair-display {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
-.results{
-  font-family: "Inter", sans-serif;
-  color: #0A6647 ;
+.titleofprotot{
+  font-family: "Playfair Display", serif;
+  color: #3d4143;
   font-weight: 700;
-  font-size: 48px;
-  align-items: center;
+  font-size: 2rem;
 }
 .rounded{
-  align-items: center;
-}
-.bodytxt{
-  font-size: 24px;
-  font-weight: 500;
-  font-family: "Inter", sans-serif;
-  color: #0A6647 ;
-  text-align: left;
+  width:100%;
+  height:auto;
 }

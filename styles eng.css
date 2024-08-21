@@ -142,11 +142,15 @@ ul li a:hover {
 
 .description {
   line-height: 2rem;
-  color: var(--text-light);
+  color:#008055;
+  margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size: 24px;
+  font-size: 2rem;
   font-family:"Inter" ;
-  font-weight: 500;
+  font-weight: 550;
+  text-align: left;
+  padding-right: 8rem;
+  padding-left: 6rem;
 }
 
 
@@ -156,7 +160,7 @@ ul li a:hover {
   color: #ffffff;
 }
 
-@media (width < 750px) {
+@media screen and (max-width: 1200px) {
   nav .checkbox {
     display: block;
   }
@@ -167,7 +171,7 @@ ul li a:hover {
     height: calc(100vh - 85px);
     left: -100%;
     top: 85px;
-    background-color: var(--extra-light);
+    background-color: #008055;
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
@@ -191,47 +195,27 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
+ 
+
 }  
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;
 }
 
-.card {
-  padding: 1rem 1rem ;
-  height: fit-content;
-  width: 500px;
-  justify-content: center;
-  margin: auto;
-  background-color: #00805500;
-  color: #ffffff;
-  /* backdrop-filter: blur(14px);  */
-  border: 0px;
-}
-.card-body{
-  height: auto;
-  width: 400px;
-  font-family: "Bebas Neue", sans-serif;
-}
-.card-title{
-  font-size: 32px ;
-}
-.card-text{
-  font-size: 20px ;
-}
 .text-center{
-  padding: 1rem 1rem ;
+  padding: 0.5rem 0.5rem ;
 }
 
-.playfair-display {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+
+
+.rounded{
+  width:100%;
+  height:auto;
 }
-.titleofprotot{
-  font-family: "Playfair Display", serif;
-  color: #3d4143;
-  font-weight: 700;
-  font-size: 48px;
+
+.divider{
+  width: 50rem;
+  text-align: center;
+  margin: auto;
 }

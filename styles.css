@@ -86,6 +86,9 @@ ul li a {
 
 ul li a:hover {
   color: var(--secondary-color);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color:var(--secondary-color) ;
 }
 
  
@@ -152,7 +155,7 @@ ul li a:hover {
   color: #ffffff;
 }
 
-@media (width < 750px) {
+@media screen and (max-width: 1200px) {
   nav .checkbox {
     display: block;
   }
@@ -166,7 +169,7 @@ ul li a:hover {
     background-color: var(--text-dark);
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
+    
   }
 
   nav #check:checked ~ ul {
@@ -178,7 +181,7 @@ ul li a:hover {
   }
 
   .section__container {
-    padding: 10rem 1rem 5rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -187,6 +190,12 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
+  .card-title{
+    font-size: 1rem ;
+  }
+  .card-text{
+    font-size: 0.5rem ;
+  }
 }  
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
@@ -194,9 +203,9 @@ ul li a:hover {
 }
 
 .card {
-  padding: 1rem 1rem ;
+  padding: 1rem 1rem 1rem 1rem;
   height: fit-content;
-  width: 500px;
+  width: 100%;
   justify-content: center;
   margin: auto;
   background-color: #0080551f;
@@ -212,15 +221,15 @@ ul li a:hover {
   z-index: 1;
 }
 .card-body{
-  height: auto;
+  height: 250px;
   width: 400px;
   font-family: "Bebas Neue", sans-serif;
 }
 .card-title{
-  font-size: 32px ;
+  font-size: 3rem ;
 }
 .card-text{
-  font-size: 20px ;
+  font-size: 2rem ;
 }
 .text-center{
   padding: 1rem 1rem ;
