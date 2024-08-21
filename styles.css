@@ -126,7 +126,7 @@ ul li a:hover {
 }
 
 .title span {
-  font-size: 84px;
+  font-size: 86px;
   font-family: "Bebas Neue", sans-serif;
 }
 
@@ -196,6 +196,9 @@ ul li a:hover {
   .card-text{
     font-size: 0.5rem ;
   }
+  #work{
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
 }  
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
@@ -236,4 +239,19 @@ ul li a:hover {
 }
 .card-img-top{
   border-radius: 15px;
+}
+
+#header-image-menu img{
+	width: 100%;
+	margin: none;
+	padding: none;
+}
+
+#header-image-menu{
+	top: 10px;
+	position: relative;
+}
+
+#work{
+  padding: 1rem 1rem 1rem 1rem;
 }
