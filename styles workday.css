@@ -104,11 +104,18 @@ ul li a:hover {
   justify-content: center;
 }
 
-.subtitle {
+.subtitle1{
   font-size: 1rem;
+  margin-top: 0.5rem;
+  color: gray ;
+}
+.subtitle {
+  font-size: 1.75rem;
   margin-bottom: 0.5rem;
-  color: gray;
-  margin-top: 1rem;
+  color: var(--primary-color-dark) ;
+  padding-right: 8rem;
+  padding-left: 6rem;
+  line-height: 2rem;
 }
 
 .title {
@@ -135,7 +142,7 @@ ul li a:hover {
    font-weight: 600; 
   line-height: 3rem;
   color: var(--secondary-color);
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: left;
   padding-right: 8rem;
@@ -144,7 +151,7 @@ ul li a:hover {
 
 .description {
   color:#0e1111;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   font-size: 1.25rem;
   font-family:"Inter" ;
@@ -200,6 +207,14 @@ ul li a:hover {
   .card-text{
     font-size: 0.5rem ;
   }
+  .divider{
+    width: 20rem;
+    text-align: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    height: 3px;
+  }
+
 }  
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
@@ -257,12 +272,12 @@ ul li a:hover {
   width: 50rem;
   text-align: center;
   margin: auto;
-  height: 5px;
+  height: 3px;
 }
 
 .screenshots{
   width: 100%;
   height: auto;
   justify-content: center;
-  padding: 1rem 6rem 6rem 6rem;
+  padding: 1rem 4rem 4rem 4rem;
 }
