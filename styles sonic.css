@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
   --primary-color: #a855f7;
@@ -24,6 +25,9 @@ a {
 
 body {
   font-family: "Inter";
+  /* background-image: url("logos/Background\ for\ web.jpg");
+  background-size: cover;
+  background-attachment: fixed; */
 }
 
 nav {
@@ -50,6 +54,9 @@ nav {
   width: 100px;
   height: 100%;
 }
+/* nav .logo a:hover {
+  color: var(--primary-color-dark);
+}  */
 
 nav .checkbox {
   display: none;
@@ -83,9 +90,6 @@ ul li a {
 
 ul li a:hover {
   color: var(--secondary-color);
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color:var(--secondary-color) ;
 }
 
  
@@ -94,7 +98,8 @@ ul li a:hover {
   min-height: 100vh;
   max-width: var(--max-width);
   margin: auto;
-  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
 
@@ -104,63 +109,64 @@ ul li a:hover {
   justify-content: center;
 }
 
-.subtitle1{
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  color: gray ;
-}
 .subtitle {
-  font-size: 1.75rem;
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
   margin-bottom: 0.5rem;
-  color: var(--primary-color-dark) ;
-  padding-right: 8rem;
-  padding-left: 6rem;
-  line-height: 2rem;
+  font-size: 24px;
+  color: #0A6647;
 }
 
 .title {
-  font-size: 2rem;
-  /* font-weight: 400; */
+  font-size: 2.5rem;
+   font-weight: 400; 
   line-height: 3rem;
-  color: var(--secondary-color);
+  color: var(--text-dark);
   margin-bottom: 1rem;
 }
 
 .title span {
-  font-size: 2.5rem;
-  font-weight: 600; 
- line-height: 3rem;
- color: black;
- margin-bottom: 1rem;
- text-align: left;
- padding-right: 8rem;
- padding-left: 2.5rem;
+  font-size: 84px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .title1{
   font-size: 2.5rem;
    font-weight: 600; 
   line-height: 3rem;
-  color: var(--secondary-color);
-  margin-top: 1rem;
+  color: var(--text-dark);
   margin-bottom: 1rem;
+  text-align: left;
+  padding-right: 8rem;
+  padding-left: 2.5rem;
+}
+
+.description {
+  line-height: 2rem;
+  color:#008055;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family:"Inter" ;
+  font-weight: 550;
   text-align: left;
   padding-right: 8rem;
   padding-left: 6rem;
 }
 
-.description {
-  color:#0e1111;
-  margin-top: 1rem;
+.description span {
+  line-height: 2rem;
+  color:#008055;
+  margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-family:"Inter" ;
+  font-weight: 400;
   text-align: left;
   padding-right: 8rem;
-  padding-left: 8rem;
+  padding-left: 6rem;
 }
-
-
 
 .portfolio:hover {
   background-color: var(--primary-color-dark);
@@ -178,10 +184,10 @@ ul li a:hover {
     height: calc(100vh - 85px);
     left: -100%;
     top: 85px;
-    background-color: var(--text-dark);
+    background-color: #008055;
     flex-direction: column;
     justify-content: center;
-    
+    gap: 3rem;
   }
 
   nav #check:checked ~ ul {
@@ -193,27 +199,16 @@ ul li a:hover {
   }
 
   .section__container {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 10rem 1rem 5rem 1rem;
     text-align: center;
+    grid-template-columns: repeat(1, 1fr);
   }
 
 
   .action__btns {
     margin: auto;
   }
-  .card-title{
-    font-size: 1rem ;
-  }
-  .card-text{
-    font-size: 0.5rem ;
-  }
-  .divider{
-    width: 20rem;
-    text-align: center;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    height: 3px;
-  }
+ 
 
 }  
 .bebas-neue-regular {
@@ -221,40 +216,21 @@ ul li a:hover {
   font-style: normal;
 }
 
-.card {
-  padding: 1rem 1rem 1rem 1rem;
-  height: fit-content;
-  width: 100%;
-  justify-content: center;
-  margin: auto;
-  background-color: #0080551f;
-  color: #ffffff;
-  /* backdrop-filter: blur(14px);  */
-  border: 3px;
-  border-radius: 25px;
-  transition: 0.5s;
-}
-.card:hover{
-  transform: scale(1.1);
-  background: #008055;
-  z-index: 1;
-}
-.card-body{
-  height: 250px;
-  width: 400px;
-  font-family: "Bebas Neue", sans-serif;
-}
-.card-title{
-  font-size: 3rem ;
-}
-.card-text{
-  font-size: 2rem ;
-}
 .text-center{
-  padding: 1rem 1rem ;
+  padding: 0.5rem 0.5rem ;
 }
-.card-img-top{
-  border-radius: 15px;
+
+
+
+.rounded{
+  width:100%;
+  height:auto;
+}
+
+.divider{
+  width: 50rem;
+  text-align: center;
+  margin: auto;
 }
 
 #header-image-menu img{
@@ -266,18 +242,4 @@ ul li a:hover {
 #header-image-menu{
 	top: 10px;
 	position: relative;
-}
-
-.divider{
-  width: 50rem;
-  text-align: center;
-  margin: auto;
-  height: 3px;
-}
-
-.screenshots{
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  padding: 1rem 2rem 2rem 2rem;
 }
