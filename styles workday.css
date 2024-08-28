@@ -118,6 +118,13 @@ ul li a:hover {
   line-height: 2rem;
 }
 
+.subtitle-btn {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color-dark) ;
+  line-height: 2rem;
+}
+
 .title {
   font-size: 2rem;
   /* font-weight: 400; */
